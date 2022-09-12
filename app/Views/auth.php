@@ -271,7 +271,7 @@
                         "username": uname,
                         "password": ucode
                     },function(response){
-                        if (response['data']['message'] == 'Created'){
+                        if (typeof(response['data']['error']) === 'undefined'){
                             window.location.href = location.origin
                         }
                         
@@ -290,7 +290,7 @@
                         "username": uname,
                         "password": ucode
                     },function(response){
-                        if (response['data']['message'] == 'Created'){
+                        if (typeof(response['data']['error']) === 'undefined'){
                             window.location.href = location.origin
                         }
                         
